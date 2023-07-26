@@ -1,0 +1,642 @@
+[
+  {
+    "type": "MusicCardShelf",
+    "thumbnail": {
+      "type": "MusicThumbnail",
+      "contents": [
+        {
+          "url": "https://lh3.googleusercontent.com/KgxPQ1MlUlgV9ETcka1Hh_cQH3orxCJpVNiOi_EI-IHGcBviZXCNsMCBx3x-sX1LK3uOv72WKcDY1vjQ9g=w120-h120-l90-rj",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/KgxPQ1MlUlgV9ETcka1Hh_cQH3orxCJpVNiOi_EI-IHGcBviZXCNsMCBx3x-sX1LK3uOv72WKcDY1vjQ9g=w60-h60-l90-rj",
+          "width": 60,
+          "height": 60
+        }
+      ]
+    },
+    "title": {
+      "runs": [
+        {
+          "text": "brave shine",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false,
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "videoId": "hvVN2i6o4A4",
+              "watchEndpointMusicSupportedConfigs": {
+                "watchEndpointMusicConfig": {
+                  "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+                }
+              }
+            },
+            "metadata": {
+              "api_url": "/player"
+            }
+          }
+        }
+      ],
+      "text": "brave shine",
+      "endpoint": {
+        "type": "NavigationEndpoint",
+        "payload": {
+          "videoId": "hvVN2i6o4A4",
+          "watchEndpointMusicSupportedConfigs": {
+            "watchEndpointMusicConfig": {
+              "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+            }
+          }
+        },
+        "metadata": {
+          "api_url": "/player"
+        }
+      }
+    },
+    "subtitle": {
+      "runs": [
+        {
+          "text": "Song",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false
+        },
+        {
+          "text": " • ",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false
+        },
+        {
+          "text": "Aimer",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false,
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "browseId": "UC_gksw7NEueO_u3lPL372hA",
+              "browseEndpointContextSupportedConfigs": {
+                "browseEndpointContextMusicConfig": {
+                  "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                }
+              }
+            },
+            "metadata": {
+              "api_url": "/browse"
+            }
+          }
+        },
+        {
+          "text": " • ",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false
+        },
+        {
+          "text": "Dawn",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false,
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "browseId": "MPREb_AZm4YbMb6N4",
+              "browseEndpointContextSupportedConfigs": {
+                "browseEndpointContextMusicConfig": {
+                  "pageType": "MUSIC_PAGE_TYPE_ALBUM"
+                }
+              }
+            },
+            "metadata": {
+              "api_url": "/browse"
+            }
+          }
+        },
+        {
+          "text": " • ",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false
+        },
+        {
+          "text": "3:54",
+          "bold": false,
+          "italics": false,
+          "strikethrough": false
+        }
+      ],
+      "text": "Song • Aimer • Dawn • 3:54"
+    },
+    "buttons": [
+      {
+        "type": "Button",
+        "text": "Play",
+        "label": "PLAY ALL",
+        "icon_type": "PLAY_ARROW",
+        "is_disabled": false,
+        "endpoint": {
+          "type": "NavigationEndpoint",
+          "payload": {
+            "videoId": "hvVN2i6o4A4",
+            "params": "wAEB",
+            "watchEndpointMusicSupportedConfigs": {
+              "watchEndpointMusicConfig": {
+                "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+              }
+            }
+          },
+          "metadata": {
+            "api_url": "/player"
+          }
+        }
+      },
+      {
+        "type": "Button",
+        "text": "Add",
+        "label": "Save to playlist",
+        "icon_type": "PLAYLIST_ADD",
+        "endpoint": {
+          "type": "NavigationEndpoint",
+          "payload": {
+            "videoId": "hvVN2i6o4A4"
+          },
+          "metadata": {}
+        }
+      }
+    ],
+    "menu": {
+      "type": "Menu",
+      "items": [
+        {
+          "type": "MenuNavigationItem",
+          "text": "Start radio",
+          "icon_type": "MIX",
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "videoId": "hvVN2i6o4A4",
+              "playlistId": "RDAMVMhvVN2i6o4A4",
+              "params": "wAEB",
+              "loggingContext": {
+                "vssLoggingContext": {
+                  "serializedContextData": "GhFSREFNVk1odlZOMmk2bzRBNA%3D%3D"
+                }
+              },
+              "watchEndpointMusicSupportedConfigs": {
+                "watchEndpointMusicConfig": {
+                  "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+                }
+              }
+            },
+            "metadata": {
+              "api_url": "/player"
+            }
+          }
+        },
+        {
+          "type": "MenuServiceItem",
+          "text": "Play next",
+          "icon_type": "QUEUE_PLAY_NEXT",
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "queueTarget": {
+                "videoId": "hvVN2i6o4A4"
+              },
+              "queueInsertPosition": "INSERT_AFTER_CURRENT_VIDEO",
+              "commands": [
+                {
+                  "clickTrackingParams": "CN0BEL7uBRgBIhMIp8isxJuqgAMVVptWAR3Ejw7O",
+                  "addToToastAction": {
+                    "item": {
+                      "notificationTextRenderer": {
+                        "successResponseText": {
+                          "runs": [
+                            {
+                              "text": "Song will play next"
+                            }
+                          ]
+                        },
+                        "trackingParams": "CN4BEMrHAyITCKfIrMSbqoADFVabVgEdxI8Ozg=="
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "metadata": {}
+          }
+        },
+        {
+          "type": "MenuServiceItem",
+          "text": "Add to queue",
+          "icon_type": "ADD_TO_REMOTE_QUEUE",
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "queueTarget": {
+                "videoId": "hvVN2i6o4A4"
+              },
+              "queueInsertPosition": "INSERT_AT_END",
+              "commands": [
+                {
+                  "clickTrackingParams": "CNsBEPvvBRgCIhMIp8isxJuqgAMVVptWAR3Ejw7O",
+                  "addToToastAction": {
+                    "item": {
+                      "notificationTextRenderer": {
+                        "successResponseText": {
+                          "runs": [
+                            {
+                              "text": "Song added to queue"
+                            }
+                          ]
+                        },
+                        "trackingParams": "CNwBEMrHAyITCKfIrMSbqoADFVabVgEdxI8Ozg=="
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "metadata": {}
+          }
+        },
+        {
+          "type": "ToggleMenuServiceItem",
+          "text": {
+            "runs": [
+              {
+                "text": "Remove from library",
+                "bold": false,
+                "italics": false,
+                "strikethrough": false
+              }
+            ],
+            "text": "Remove from library"
+          },
+          "toggled_text": {
+            "runs": [
+              {
+                "text": "Save to library",
+                "bold": false,
+                "italics": false,
+                "strikethrough": false
+              }
+            ],
+            "text": "Save to library"
+          },
+          "icon_type": "LIBRARY_SAVED",
+          "toggled_icon_type": "LIBRARY_ADD",
+          "default_endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "feedbackToken": "AB9zfpL0T9VBwzLTdg_K5P5ehiFhPNnneMu2y9d4IP1ZN_VcvbgM6QsJ9fsXZZ_V4K3uauq1UmhT464u_ObS8Y6bXcdD2E6lLg"
+            },
+            "metadata": {}
+          },
+          "toggled_endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "feedbackToken": "AB9zfpKm6xtgShOvM5YlATkHuN6XHt-UEgCuBH9GDAYhGdd8Ldh3_XwNI32lx52dIOXLaohK6JrVfeLwhdkySDmdK5q1-oIoKg"
+            },
+            "metadata": {}
+          }
+        },
+        {
+          "type": "ToggleMenuServiceItem",
+          "text": {
+            "runs": [
+              {
+                "text": "Remove from liked songs",
+                "bold": false,
+                "italics": false,
+                "strikethrough": false
+              }
+            ],
+            "text": "Remove from liked songs"
+          },
+          "toggled_text": {
+            "runs": [
+              {
+                "text": "Add to liked songs",
+                "bold": false,
+                "italics": false,
+                "strikethrough": false
+              }
+            ],
+            "text": "Add to liked songs"
+          },
+          "icon_type": "UNFAVORITE",
+          "toggled_icon_type": "FAVORITE",
+          "default_endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "status": "INDIFFERENT",
+              "target": {
+                "videoId": "hvVN2i6o4A4"
+              }
+            },
+            "metadata": {}
+          },
+          "toggled_endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "status": "LIKE",
+              "target": {
+                "videoId": "hvVN2i6o4A4"
+              },
+              "actions": [
+                {
+                  "clickTrackingParams": "CNkBEIyfBhgEIhMIp8isxJuqgAMVVptWAR3Ejw7O",
+                  "musicLibraryStatusUpdateCommand": {
+                    "libraryStatus": "MUSIC_LIBRARY_STATUS_IN_LIBRARY",
+                    "addToLibraryFeedbackToken": "AB9zfpKm6xtgShOvM5YlATkHuN6XHt-UEgCuBH9GDAYhGdd8Ldh3_XwNI32lx52dIOXLaohK6JrVfeLwhdkySDmdK5q1-oIoKg"
+                  }
+                }
+              ]
+            },
+            "metadata": {}
+          }
+        },
+        {
+          "type": "MenuNavigationItem",
+          "text": "Save to playlist",
+          "icon_type": "ADD_TO_PLAYLIST",
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "videoId": "hvVN2i6o4A4"
+            },
+            "metadata": {}
+          }
+        },
+        {
+          "type": "MenuNavigationItem",
+          "text": "Go to album",
+          "icon_type": "ALBUM",
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "browseId": "MPREb_AZm4YbMb6N4",
+              "browseEndpointContextSupportedConfigs": {
+                "browseEndpointContextMusicConfig": {
+                  "pageType": "MUSIC_PAGE_TYPE_ALBUM"
+                }
+              }
+            },
+            "metadata": {
+              "api_url": "/browse"
+            }
+          }
+        },
+        {
+          "type": "MenuNavigationItem",
+          "text": "Go to artist",
+          "icon_type": "ARTIST",
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "browseId": "UC_gksw7NEueO_u3lPL372hA",
+              "browseEndpointContextSupportedConfigs": {
+                "browseEndpointContextMusicConfig": {
+                  "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                }
+              }
+            },
+            "metadata": {
+              "api_url": "/browse"
+            }
+          }
+        },
+        {
+          "type": "MenuNavigationItem",
+          "text": "Share",
+          "icon_type": "SHARE",
+          "endpoint": {
+            "type": "NavigationEndpoint",
+            "payload": {
+              "serializedShareEntity": "CgtodlZOMmk2bzRBNA%3D%3D",
+              "sharePanelType": "SHARE_PANEL_TYPE_UNIFIED_SHARE_PANEL"
+            },
+            "metadata": {}
+          }
+        }
+      ],
+      "top_level_buttons": [],
+      "label": "Action menu"
+    },
+    "on_tap": {
+      "type": "NavigationEndpoint",
+      "payload": {
+        "videoId": "hvVN2i6o4A4",
+        "watchEndpointMusicSupportedConfigs": {
+          "watchEndpointMusicConfig": {
+            "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+          }
+        }
+      },
+      "metadata": {
+        "api_url": "/player"
+      }
+    },
+    "header": {
+      "type": "MusicCardShelfHeaderBasic",
+      "title": {
+        "runs": [
+          {
+            "text": "Top result",
+            "bold": false,
+            "italics": false,
+            "strikethrough": false
+          }
+        ],
+        "text": "Top result"
+      }
+    },
+    "subtitle_badges": [],
+    "thumbnail_overlay": {
+      "type": "MusicItemThumbnailOverlay",
+      "content": {
+        "type": "MusicPlayButton",
+        "endpoint": {
+          "type": "NavigationEndpoint",
+          "payload": {
+            "videoId": "hvVN2i6o4A4",
+            "watchEndpointMusicSupportedConfigs": {
+              "watchEndpointMusicConfig": {
+                "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+              }
+            }
+          },
+          "metadata": {
+            "api_url": "/player"
+          }
+        },
+        "play_icon_type": "PLAY_ARROW",
+        "pause_icon_type": "PAUSE",
+        "play_label": "Play brave shine - Aimer",
+        "pause_label": "Pause brave shine - Aimer",
+        "icon_color": 4294967295
+      },
+      "content_position": "MUSIC_ITEM_THUMBNAIL_OVERLAY_CONTENT_POSITION_CENTERED",
+      "display_style": "MUSIC_ITEM_THUMBNAIL_OVERLAY_DISPLAY_STYLE_PERSISTENT"
+    },
+    "contents": [
+      {
+        "type": "Message",
+        "text": {
+          "runs": [
+            {
+              "text": "More from YouTube",
+              "bold": false,
+              "italics": false,
+              "strikethrough": false
+            }
+          ],
+          "text": "More from YouTube"
+        }
+      },
+      {
+        "type": "MusicResponsiveListItem",
+        "flex_columns": [
+          {
+            "type": "MusicResponsiveListItemFlexColumn",
+            "title": {
+              "runs": [
+                {
+                  "text": "【ファンタスティックユース】Brave Shine【COVER】",
+                  "bold": false,
+                  "italics": false,
+                  "strikethrough": false,
+                  "endpoint": {
+                    "type": "NavigationEndpoint",
+                    "payload": {
+                      "videoId": "mi-ozj3JC1k",
+                      "watchEndpointMusicSupportedConfigs": {
+                        "watchEndpointMusicConfig": {
+                          "musicVideoType": "MUSIC_VIDEO_TYPE_OMV"
+                        }
+                      }
+                    },
+                    "metadata": {
+                      "api_url": "/player"
+                    }
+                  }
+                }
+              ],
+              "text": "【ファンタスティックユース】Brave Shine【COVER】",
+              "endpoint": {
+                "type": "NavigationEndpoint",
+                "payload": {
+                  "videoId": "mi-ozj3JC1k",
+                  "watchEndpointMusicSupportedConfigs": {
+                    "watchEndpointMusicConfig": {
+                      "musicVideoType": "MUSIC_VIDEO_TYPE_OMV"
+                    }
+                  }
+                },
+                "metadata": {
+                  "api_url": "/player"
+                }
+              }
+            },
+            "display_priority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+          },
+          {
+            "type": "MusicResponsiveListItemFlexColumn",
+            "title": {
+              "runs": [
+                {
+                  "text": "FantasticYouth",
+                  "bold": false,
+                  "italics": false,
+                  "strikethrough": false,
+                  "endpoint": {
+                    "type": "NavigationEndpoint",
+                    "payload": {
+                      "browseId": "UCbYS0J8oUFQUdtLS9Y8HEvA",
+                      "browseEndpointContextSupportedConfigs": {
+                        "browseEndpointContextMusicConfig": {
+                          "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                        }
+                      }
+                    },
+                    "metadata": {
+                      "api_url": "/browse"
+                    }
+                  }
+                },
+                {
+                  "text": " • ",
+                  "bold": false,
+                  "italics": false,
+                  "strikethrough": false
+                },
+                {
+                  "text": "2.5M views",
+                  "bold": false,
+                  "italics": false,
+                  "strikethrough": false
+                },
+                {
+                  "text": " • ",
+                  "bold": false,
+                  "italics": false,
+                  "strikethrough": false
+                },
+                {
+                  "text": "3:59",
+                  "bold": false,
+                  "italics": false,
+                  "strikethrough": false
+                }
+              ],
+              "text": "FantasticYouth • 2.5M views • 3:59",
+              "endpoint": {
+                "type": "NavigationEndpoint",
+                "payload": {
+                  "browseId": "UCbYS0J8oUFQUdtLS9Y8HEvA",
+                  "browseEndpointContextSupportedConfigs": {
+                    "browseEndpointContextMusicConfig": {
+                      "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                    }
+                  }
+                },
+                "metadata": {
+                  "api_url": "/browse"
+                }
+              }
+            },
+            "display_priority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+          }
+        ],
+        "fixed_columns": [],
+        "endpoint": null,
+        "item_type": "video",
+        "id": "mi-ozj3JC1k",
+        "title": "【ファンタスティックユース】Brave Shine【COVER】",
+        "views": "2.5M views",
+        "authors": [
+          {
+            "name": "FantasticYouth",
+            "channel_id": "UCbYS0J8oUFQUdtLS9Y8HEvA",
+            "endpoint": {
+              "type": "NavigationEndpoint",
+              "payload": {
+                "browseId": "UCbYS0J8oUFQUdtLS9Y8HEvA",
+                "browseEndpointContextSupportedConfigs": {
+                  "browseEndpointContextMusicConfig": {
+                    "pageType": "M"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

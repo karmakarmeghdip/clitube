@@ -4,11 +4,13 @@
   "description": "Listen to music from your terminal",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
+  "bin": "./index.js",
   "author": "Meghdip Karmakar",
   "license": "MIT",
   "dependencies": {
+    "nanospinner": "^1.1.0",
     "youtubei.js": "^5.6.0"
   }
 }

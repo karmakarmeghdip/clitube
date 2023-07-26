@@ -7,8 +7,8 @@ Listen to music, watch videos right from your terminal, also supports account lo
 
 
 ## Deps:
-MPV (probably)
-Node.js
+- MPV (probably)
+- Node.js
 
 ## Roadmap:
 Account signin (works)

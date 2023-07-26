@@ -1,5 +1,5 @@
 {
-  "name": "clitube",
+  "name": "shelltube",
   "version": "1.0.0",
   "description": "Listen to music from your terminal",
   "main": "index.js",

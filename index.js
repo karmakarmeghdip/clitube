@@ -1,15 +1,15 @@
-const { Innertube, UniversalCache } = require("youtubei.js");
-const readline = require("readline");
-const { createSpinner } = require("nanospinner");
-const { spawn } = require("child_process");
+import { Innertube, UniversalCache } from "youtubei.js";
+import { createSpinner } from "nanospinner";
+import config from "./config.json" assert {type: "json"};
+// import { prompt } from "./src/utils/input.js";
+import { input } from "@inquirer/prompts";
+import { search_music } from "./src/music.js";
 
-const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-const prompt = (query) => new Promise((resolve) => rl.question(query, resolve));
 
 const spinner = createSpinner("Loading...").start();
 
 (async () => {
-  const config = require("./config.json");
+  
   // console.log(config);
 
   const yt = await Innertube.create({
@@ -34,46 +34,7 @@ const spinner = createSpinner("Loading...").start();
 
   spinner.stop();
   console.clear();
-
-  const searchTerm = await prompt("Type term to search: ");
-  spinner.start();
-
-  const search = await yt.music.search(searchTerm, { type: "all" });
-  spinner.stop();
-  console.clear();
-  let i = 1;
-  for (const music of search.songs.contents) {
-    if (music.artists[0]) {
-      console.log(`${i++}: ${music.title} by ${music.artists[0].name} at ${music.id}`);
-    } else {
-      console.log(`${i++}: ${music.title}`);
-    }
-  }
-
-  const idx = await prompt("Which one? ");
-  const song = search.songs.contents[idx - 1];
-  if (song.id) {
-    console.log(`Playing https://youtu.be/${song.id}`)
-    const play = spawn("mpv", [`https://youtu.be/${song.id}`, "--no-video"]);
-    // play.stdout.on("data", data => {
-    //   console.log(`stdout: ${data}`);
-    // });
-
-    play.stderr.on("data", data => {
-      console.log(`stderr: ${data}`);
-    });
-
-    play.on('error', (error) => {
-      console.log(`error: ${error.message}`);
-    });
-
-    play.on("close", async (code) => {
-      await yt.session.oauth.cacheCredentials();
-      process.exit(0)
-    });
-  }
-
-
-  
-  
+  const id = await search_music(spinner, yt)
+  // const inf = await yt.getInfo(id)
+  // console.dir(inf)
 })()
